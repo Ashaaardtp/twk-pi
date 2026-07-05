@@ -15,7 +15,7 @@ function HeroStatic() {
         Super Partner · GoFood
       </p>
       <h1 className="mb-0 mt-5 text-[2.5rem] font-bold leading-[1.15] tracking-tight text-[#1a100a] sm:mt-6 sm:text-6xl lg:text-7xl">
-        Tahu Walik
+        Tahu Walik Kribo
       </h1>
       <p className="mb-0 mt-3 text-xl font-medium leading-snug text-[#583b21] sm:mt-4 sm:text-2xl lg:text-3xl">
         Pasir Impun

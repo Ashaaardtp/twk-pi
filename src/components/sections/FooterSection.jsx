@@ -92,11 +92,14 @@ export default function FooterSection() {
                 &copy; {new Date().getFullYear()}{" "}
                 Tahu Walik Kribo. Semua hak
                 dilindungi.
+                <span className="mt-1 block text-[#947452]">
+                  Made by Mpash
+                </span>
               </p>
               <div className="flex items-center gap-3">
                 <ScrollToTop />
                 <a
-                  href="https://gofood.link"
+                  href="https://gofood.co.id/bandung/restaurant/tahu-walik-kribo-pasir-impun-barat-7c8d1e48-7b30-4425-874e-509a7e533653?as=gmaps"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-[#947452]/20 flex items-center justify-center hover:bg-[#DA8A0A] transition-colors">
@@ -105,7 +108,7 @@ export default function FooterSection() {
                   </span>
                 </a>
                 <a
-                  href="https://wa.me/"
+                  href="https://wa.me/6283822144183"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-[#947452]/20 flex items-center justify-center hover:bg-[#DA8A0A] transition-colors">
