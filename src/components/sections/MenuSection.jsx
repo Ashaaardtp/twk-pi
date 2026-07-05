@@ -96,15 +96,20 @@ function MenuGrid({ groupedMenu, canAnimate }) {
           key={category}
           variants={menuGridVariant}
           initial="hidden"
-          animate="visible">
+          animate="visible"
+          exit="exit"
+          className="overflow-hidden">
           <CategoryHeading category={category} />
           <motion.div
             className="grid grid-cols-2 gap-3.5 sm:grid-cols-3 sm:gap-5 lg:grid-cols-4 lg:gap-6 xl:grid-cols-5"
             variants={staggerContainer}
             initial="hidden"
             animate="visible">
-            {items.map((item) => (
-              <motion.div key={item.id} variants={menuCardVariant}>
+            {items.map((item, index) => (
+              <motion.div
+                key={item.id}
+                variants={menuCardVariant}
+                transition={{ delay: index * 0.04, duration: 0.45 }}>
                 <MenuCard item={item} />
               </motion.div>
             ))}
@@ -182,10 +187,10 @@ export default function MenuSection() {
         <AnimatePresence mode="wait">
           <motion.div
             key={selectedCategory}
-            variants={staggerContainer}
-            initial="hidden"
-            animate="visible"
-            exit="exit">
+            initial={{ opacity: 0, y: 18, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -12, scale: 0.98 }}
+            transition={{ duration: 0.32, ease: [0.22, 1, 0.36, 1] }}>
             <MenuGrid groupedMenu={groupedMenu} canAnimate />
           </motion.div>
         </AnimatePresence>
