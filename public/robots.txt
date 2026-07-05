@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://twk-pi.vercel.app/sitemap.xml
+Sitemap: https://twk-pi-official.vercel.app/sitemap.xml
