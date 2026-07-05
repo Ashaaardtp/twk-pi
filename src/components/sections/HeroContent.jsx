@@ -1,7 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { heroItem, heroStagger } from "@/lib/motion";
+import {
+  heroItem,
+  heroStagger,
+} from "@/lib/motion";
 import { useCanAnimate } from "@/lib/useCanAnimate";
 
 const staticClassName =
@@ -15,14 +18,18 @@ function HeroStatic() {
         Super Partner · GoFood
       </p>
       <h1 className="mb-0 mt-5 text-[2.5rem] font-bold leading-[1.15] tracking-tight text-[#1a100a] sm:mt-6 sm:text-6xl lg:text-7xl">
-        Tahu Walik Kribo
+        Tahu Walik Kribo Pasir Impun
       </h1>
       <p className="mb-0 mt-3 text-xl font-medium leading-snug text-[#583b21] sm:mt-4 sm:text-2xl lg:text-3xl">
-        Pasir Impun
+        Tahu Walik khas Bandung yang renyah dan
+        gurih
       </p>
       <p className="mx-auto mb-0 mt-5 max-w-md text-sm leading-relaxed text-[#7a5f42] sm:mt-6 sm:max-w-lg sm:text-base">
-        Nikmati kelezatan tahu walik kribo yang renyah di luar, lembut di
-        dalam — dengan berbagai pilihan saus menggugah selera.
+        Nikmati tahu walik kribo yang terkenal di
+        Pasir Impun, Bandung, dengan tekstur
+        renyah di luar, lembut di dalam, dan
+        berbagai pilihan saus yang menggugah
+        selera.
       </p>
       <div className="mt-8 sm:mt-9">
         <a
@@ -59,23 +66,29 @@ export default function HeroContent() {
       <motion.h1
         variants={heroItem}
         className="mb-0 mt-5 text-[2.5rem] font-bold leading-[1.15] tracking-tight text-[#1a100a] sm:mt-6 sm:text-6xl lg:text-7xl">
-        Tahu Walik
+        Tahu Walik Kribo Pasir Impun
       </motion.h1>
 
       <motion.p
         variants={heroItem}
         className="mb-0 mt-3 text-xl font-medium leading-snug text-[#583b21] sm:mt-4 sm:text-2xl lg:text-3xl">
-        Pasir Impun
+        Tahu Walik khas Bandung yang renyah dan
+        gurih
       </motion.p>
 
       <motion.p
         variants={heroItem}
         className="mx-auto mb-0 mt-5 max-w-md text-sm leading-relaxed text-[#7a5f42] sm:mt-6 sm:max-w-lg sm:text-base">
-        Nikmati kelezatan tahu walik kribo yang renyah di luar, lembut di
-        dalam — dengan berbagai pilihan saus menggugah selera.
+        Nikmati tahu walik kribo yang terkenal di
+        Pasir Impun, Bandung, dengan tekstur
+        renyah di luar, lembut di dalam, dan
+        berbagai pilihan saus yang menggugah
+        selera.
       </motion.p>
 
-      <motion.div variants={heroItem} className="mt-8 sm:mt-9">
+      <motion.div
+        variants={heroItem}
+        className="mt-8 sm:mt-9">
         <motion.a
           href="#menu"
           whileHover={{ scale: 1.04, y: -2 }}
