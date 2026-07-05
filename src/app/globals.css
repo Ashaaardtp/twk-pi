@@ -86,6 +86,10 @@ label {
   }
 }
 
+.hero-image-container {
+  animation: hero-zoom-reveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
 @keyframes section-marquee {
   from {
     transform: translate3d(0, 0, 0);
