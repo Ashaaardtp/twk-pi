@@ -26,7 +26,8 @@ export const metadata = {
     template: "%s | Tahu Walik Kribo Pasir Impun",
   },
   verification: {
-    google: "w5oacAE49k2ZyOyZxipv-TFksgG6AGk5BjKNEMc-Lmo",
+    google:
+      "w5oacAE49k2ZyOyZxipv-TFksgG6AGk5BjKNEMc-Lmo",
   },
   description:
     "Tahu Walik Kribo Pasir Impun adalah kuliner khas Bandung yang terkenal dengan tahu walik renyah, gurih, dan disajikan di kawasan Pasir Impun.",
